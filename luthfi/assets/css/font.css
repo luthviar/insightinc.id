@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'gothic';
+	src: url('./gothic.eot');
+	src: local('gothic'), url('./gothic.woff') format('woff'), url('./gothic.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_9785">Text with this font applied</p> */
+.fontsforweb_fontid_9785 {
+	font-family: 'gothic' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
+
+h1.location-info-text {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 18pt;
+	color: black;
+}
+
+h1.location-info-coordinate {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 26pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26pt;
+	color: black;
+}
+
+h1.uber-promo-text{
+	color: white;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 16pt;
+}
+
+h1.promo-code{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+	color: rgb(255,219,10);
+}

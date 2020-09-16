@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/TimeCircles.css">
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA88wV87xdbXgXtEQh7F7XHGQ-DRZfjuzc"
+    async defer>
+    </script>
+	<script>
+	var myCenter=new google.maps.LatLng(-6.3623898,106.8235291);
+
+	function initialize()
+	{
+		var mapProp = {
+			center:myCenter,
+			zoom:14,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		};
+
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+		var marker=new google.maps.Marker({
+			position:myCenter,
+		});
+
+		marker.setMap(map);
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+
+<body>
+	<div class="location">
+		<div class="location-map">
+			<div class="row">
+				<div class="col-md-7 container-3 text-center">
+					<img src="assets/content/location.png" alt="location.png">
+					<h1 class="location-info-text">Our event will be held at Enginering Faculty</h1>
+					<h1 class="location-info-text">Universitas Indonesia</h1>
+					<h1 class="location-info-coordinate">659'39"S 110&deg; 25'26"E</h1>
+				</div>
+
+				<div class="col-md-5">
+					<div id="googleMap" style="width:400px;height:400px;"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="uber-promo">
+			<div class="uber-promo-container">
+				<div class="row">
+					<div class="col-md-8">
+						<h1 class="uber-promo-text">Get free Rp 50.000,- for your first-ride with UBER with our promotional code</h1>
+						<h1 class="promo-code">"JID2016xUBER"</h1>
+					</div>
+					<div class="uber-logo-container col-md-4">
+						<img class="center-block" src="assets/content/uber-logo.png" alt="uber.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="assets/js/jquery-2.2.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
